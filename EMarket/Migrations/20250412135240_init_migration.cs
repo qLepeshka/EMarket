@@ -1,4 +1,5 @@
 ﻿using System;
+using EMarket.Data;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -218,6 +219,11 @@ namespace EMarket.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+        }
+
+        internal static void Initialize(ApplicationDbContext context)
+        {
+            throw new NotImplementedException();
         }
     }
 }
